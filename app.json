@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "benefix",
+    "name": "Benefix",
     "slug": "benefix",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.thecodemaster.benefix"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +32,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ef1333c4-e585-49b2-9bf4-5fbacaaa191a"
+      }
     }
   }
 }
