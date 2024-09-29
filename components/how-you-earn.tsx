@@ -6,8 +6,8 @@ import { Link } from "expo-router";
 const earningsList = [
 	"Once you get Registered, you receive an Enrollment Cashback of ₦5,000, which you can withdraw anytime.",
 	"You can do the Daily TikTok Social Job to get an extra ₦1,200 daily.",
-	"You can play Anchor games and win up to ₦25,000 weekly.",
-	"You can participate in daily Spillover Earnings, daily Anchor Tenacious Rewards, Spin to Win, and Weekly TikTok challenge to win amazing prizes 😍",
+	"You can play Benefix games and win up to ₦25,000 weekly.",
+	"You can participate in daily Spillover Earnings, daily Benefix Tenacious Rewards, Spin to Win, and Weekly TikTok challenge to win amazing prizes 😍",
 ];
 
 export default function HowYouEarn({
