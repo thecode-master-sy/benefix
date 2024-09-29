@@ -1,6 +1,7 @@
 import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 import OrderedList from "./ordered-list";
 import { LinearGradient } from "expo-linear-gradient";
+import { Link } from "expo-router";
 
 const earningsList = [
 	"Once you get Registered, you receive an Enrollment Cashback of ₦5,000, which you can withdraw anytime.",
@@ -9,7 +10,11 @@ const earningsList = [
 	"You can participate in daily Spillover Earnings, daily Anchor Tenacious Rewards, Spin to Win, and Weekly TikTok challenge to win amazing prizes 😍",
 ];
 
-export default function HowYouEarn() {
+export default function HowYouEarn({
+	setModalVisible,
+}: {
+	setModalVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.title}>
@@ -27,7 +32,7 @@ export default function HowYouEarn() {
 				REGISTRATION, YOU WILL GET ADDED TO HOW TO MAKE ₦60k to ₦80k WEEKLY.
 			</Text>
 
-			<TouchableOpacity>
+			<TouchableOpacity onPress={() => setModalVisible(true)}>
 				<LinearGradient colors={["#FBA512", "#FB8412"]} style={styles.button}>
 					<Text style={{ ...styles.text, ...styles.buttonText }}>
 						Click here to register
@@ -56,7 +61,7 @@ const styles = StyleSheet.create({
 		paddingVertical: 8,
 		borderRadius: 8,
 		alignItems: "center",
-        marginTop: 8
+		marginTop: 8,
 	},
 	buttonText: {
 		fontSize: 18,

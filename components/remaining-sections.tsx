@@ -5,8 +5,13 @@ import multiNational from "@/assets/images/benefix-multinational.jpg";
 import earningModel from "@/assets/images/benefix-earning-model.jpg";
 import benefixCac from "@/assets/images/benefix-cac.jpg";
 import HowYouEarn from "./how-you-earn";
+import React from "react";
 
-export default function RemainingBenefixSections() {
+export default function RemainingBenefixSections({
+	setModalVisible,
+}: {
+	setModalVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
 	return (
 		<View style={styles.container}>
 			<View>
@@ -27,7 +32,7 @@ export default function RemainingBenefixSections() {
 					/>
 				</View>
 			</View>
-			<HowYouEarn />
+			<HowYouEarn setModalVisible={setModalVisible}/>
 			<View>
 				<View style={styles.pellet}>
 					<Image
@@ -93,8 +98,6 @@ export default function RemainingBenefixSections() {
 					</Text>
 				</View>
 			</View>
-
-			
 		</View>
 	);
 }
@@ -147,7 +150,5 @@ const styles = StyleSheet.create({
 		marginTop: 20,
 		borderRadius: 8,
 	},
-    footer: {
-
-    }
+	footer: {},
 });

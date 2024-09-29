@@ -25,35 +25,38 @@ export default function Footer() {
 				<Text style={styles.text}>Join us</Text>
 			</View>
 
-			<View style={{marginTop: 20}}>
-				<View style={{flexDirection: "row", columnGap: 10, justifyContent: "center"}}>
-					<TouchableOpacity style={styles.footerIcon}>
+			<View style={{ marginTop: 20 }}>
+				<View
+					style={{
+						flexDirection: "row",
+						columnGap: 10,
+						justifyContent: "center",
+					}}
+				>
+					<TouchableOpacity style={styles.footerIcon} onPress={() => Linking.openURL("https://wa.me/2349139943683?text=I+want+to+pay+for+Benefix+Registration")}>
 						<Image source={whatsapp} resizeMode="contain" />
 					</TouchableOpacity>
-					<View style={styles.footerIcon}>
+					<TouchableOpacity style={styles.footerIcon} onPress={() => Linking.openURL("https://t.me/benefixofficialpage")}>
 						<Image source={telegram} resizeMode="contain" />
-					</View>
-					<View
-						style={styles.footerIcon}
-					>
+					</TouchableOpacity>
+					<TouchableOpacity style={styles.footerIcon} onPress={() => Linking.openURL("https://www.tiktok.com/@benefixappofficialpage?_t=8q4LEBdv56r&_r=1")}>
 						<Image source={tiktok} resizeMode="contain" />
-					</View>
-					<View
-						style={styles.footerIcon}
-					>
+					</TouchableOpacity>
+					<View style={styles.footerIcon}>
 						<Image source={userGroup} resizeMode="contain" />
 					</View>
 				</View>
 			</View>
 
-            <View style={styles.logoContainer}>
+			<View style={styles.logoContainer}>
 				<Image source={logo} style={styles.logo} alt="logo" />
 			</View>
 
-
-			<View style={{ alignItems: "center", justifyContent: "center", padding: 8 }}>
-				<Text style={{ color: "white", textAlign: "center"}}>
-					All rights reserved @Anchor 2024
+			<View
+				style={{ alignItems: "center", justifyContent: "center", padding: 8 }}
+			>
+				<Text style={{ color: "white", textAlign: "center" }}>
+					All rights reserved @Benefix 2024
 				</Text>
 			</View>
 		</View>
@@ -93,17 +96,17 @@ const styles = StyleSheet.create({
 		borderRadius: 8,
 		overflow: "hidden",
 	},
-    logoContainer: {
+	logoContainer: {
 		position: "relative",
 		width: 150,
 		height: 50,
 		overflow: "hidden",
 		// borderWidth: 1,
 		// borderColor: "white"
-        marginHorizontal: "auto",
-        marginTop: 8
+		marginHorizontal: "auto",
+		marginTop: 8,
 	},
-    logo: {
+	logo: {
 		width: "100%",
 		height: 100,
 		resizeMode: "cover",
@@ -117,11 +120,11 @@ const styles = StyleSheet.create({
 		height: "100%",
 		resizeMode: "cover",
 	},
-    footerIcon: {
-        backgroundColor: "hsla(182, 71%, 9%, 0.5)",
-        padding: 10,
-        borderWidth: 1,
-        borderColor: "hsla(182, 71%, 25%, 0.5)",
-        borderRadius: 8
-    }
+	footerIcon: {
+		backgroundColor: "hsla(182, 71%, 9%, 0.5)",
+		padding: 10,
+		borderWidth: 1,
+		borderColor: "hsla(182, 71%, 25%, 0.5)",
+		borderRadius: 8,
+	},
 });
