@@ -25,8 +25,8 @@ export default function HeroSection({
 					<LinearGradient
 						colors={["#FBA512", "#FB8412"]}
 						style={{
-							paddingHorizontal: 16,
-							paddingVertical: 10,
+							paddingHorizontal: 25,
+							paddingVertical: 15,
 							minWidth: 250,
 							borderRadius: 8,
 							justifyContent: "center",

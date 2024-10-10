@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
 		fontWeight: "800",
 	},
 	button: {
-		paddingHorizontal: 20,
-		paddingVertical: 8,
+		paddingHorizontal: 25,
+		paddingVertical: 15,
 		borderRadius: 8,
 	},
 });
